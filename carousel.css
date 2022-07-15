@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.images {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+.buttonContainer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+button {
+  border: none;
+  background-color: #ffffff7d;
+  padding: 24px 12px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ffffffc4;
+}
+
+.previousButton:after {
+  content: "<";
+}
+
+.nextButton:after {
+  content: ">";
+}
